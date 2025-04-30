@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://expert-disco-x6j4vpxwv7jhqrg-8000.app.github.dev/api/activity/')
+    fetch('https://expert-disco-x6j4vpxwv7jhqrg-8000.app.github.dev/api/activities/')
       .then(res => res.json())
       .then(data => setActivities(data));
   }, []);
